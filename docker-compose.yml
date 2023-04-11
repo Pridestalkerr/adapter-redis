@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+  redis:
+    container_name: redis
+    image: bitnami/redis:latest
+    ports:
+      - ${REDIS_PORT}:${REDIS_PORT}
+    volumes:
+      - ./cache:/bitnami/redis/data
+    environment:
+      - REDIS_PASSWORD=${REDIS_PASS}
+
