@@ -1,8 +1,8 @@
 {
-  "name": "adapter-redis",
+  "name": "@pridestalkerr/adapter-redis",
   "version": "1.0.0",
-  "description": "Redis adapter for next-auth.",
-  "main": "dist/index.js",
+  "description": "Redis compatible adapter for next-auth.",
+  "main": "lib/index.js",
   "scripts": {
     "test": "jest --verbose true",
     "build": "tsc"
@@ -29,5 +29,9 @@
     "next-auth": "^4.22.0",
     "ts-jest": "^29.1.0",
     "typescript": "^5.0.4"
-  }
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "files": ["lib/**/*", "README.md"]
 }
