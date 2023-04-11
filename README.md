@@ -63,6 +63,15 @@ export default NextAuth({
 })
 ```
 
+## Testing
+
+A docker-compose file is provided to run a redis instance for testing purposes.
+
+```
+docker-compose up
+npm run test
+```
+
 ## License
 
 ISC
